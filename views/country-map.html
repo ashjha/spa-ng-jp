@@ -1,0 +1,68 @@
+<!--<h4>Country name </h4>
+<h5>Country lattitude </h5>
+<h5>Country longtitude </h5>
+
+{{map.country}}
+
+<ui-gmap-google-map center='map.map' zoom='map.map.zoom'></ui-gmap-google-map>
+
+-->
+<select ng-model="map.ct" ng-change="map.start(map.ct)">
+<option ng-repeat="ct in map.cities" value="{{ct}}">{{ct.city}}</option>
+
+</select>
+
+<div id="map"></div>
+<div id="repeat" ng-repeat="marker in map.markers">
+    <!-- <a id="country_container" href="#" ng-click="map.openInfoWindow($event, marker)"> -->
+    <!-- <label id="names" >{{marker.title}}</label></a> -->
+</div>
+<div ng-if="map.isCordinates">
+    <input type="number" ng-model="map.log" ng-change="map.change(map.log,map.lat)" />
+    <input type="number" ng-model="map.lat" ng-change="map.change(map.log,map.lat)" />
+</div>
+
+<style>
+    body {
+        font: bold 12px Arial;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    #map {
+        height: 500px;
+        width: 500px;
+    }
+    
+    #repeat {
+        display: inline;
+    }
+    
+    #country_container {
+        width: 1000px;
+        margin: 13px 3px 3px 0px;
+        text-align: center;
+        width: 85px;
+        padding: 4px;
+        display: inline-table;
+        color: white;
+        background-color: black;
+        font-size: 12px;
+        cursor: pointer;
+        border: 1px solid black;
+        border-radius: 13px;
+    }
+    
+    #country_container:hover {
+        box-shadow: 0px 0px 10px black;
+        background-color: gray;
+        border: 1px solid gray;
+        cursor: pointer;
+    }
+    
+    #names {
+        cursor: pointer;
+    }
+</style>

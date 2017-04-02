@@ -1,0 +1,9 @@
+<div class="countries">
+
+    <country-tile 
+        ng-repeat = "singleCountry in country.countries" 
+        ng-click="country.getDetailsOfCountry(singleCountry , $index)" 
+        country='singleCountry'>
+    </country-tile>
+    
+</div>

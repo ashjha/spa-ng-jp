@@ -1,0 +1,11 @@
+[ 
+  {"name": "Andorra", "latitude": 42.546245 , "longitude":1.601554},
+  {"name": "United Arab Emirates", "latitude": 23.424076 , "longitude":53.847818},
+  {"name": "Afghanistan", "latitude": 33.93911 , "longitude":67.709953	},
+  {"name": "Netherlands Antilles", "latitude": 12.226079 , "longitude":-69.060087},
+  {"name": "India", "latitude": 20.593684 , "longitude":78.96288},
+  {"name": "Australia", "latitude": -25.274398 , "longitude":133.775136},
+  {"name": "Bangladesh", "latitude": 23.684994 , "longitude":90.356331},
+  {"name": "Brazil", "latitude": -14.235004 , "longitude":-51.92528},
+  {"name": "Germany", "latitude": 51.165691 , "longitude":10.451526}  
+]
